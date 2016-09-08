@@ -2,7 +2,6 @@
 <html lang="en-US">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="describe what your project is about here.">
     <meta name="keywords" content="HTML5, CSS3, Javascript, all keywords here">
     <title>Daniel McCoy</title>
@@ -36,12 +35,25 @@
       <h2>This is box3</h2>
     </div>
 
-  <section>
-    <video width="820" height="500" preload controls loop>
-      <source src="http://www.fileurl.com/videoFiles/fileName.mp4">   <!-- add video files here -->
+  <section id="player">
+    <video id="media" width="820" height="500">
+      <source src="http://www.fileurl.com/videoFiles/fileName.mp4">
       <source src="http://www.fileurl.com/videoFiles/fileName.ogg">
-     </video>
-   </section>
+    </video>
+    <nav>
+      <div id="buttons">
+        <input type="button" id="play" value="Play">
+        <input type="button" id="mute" value="Mute">
+      </div>
+      <div id="bar">
+        <div id="progress"></div>
+      </div>
+      <div id="control">
+        <input type="range" id="volume" min="0" max="1" step="0.1" value="0.6">
+      </div>
+      <div class="clear"></div>
+    </nav>
+  </section>
 
   <footer>
     Copyright &copy; 2016  <!-- add whatever you like here for est date etc -->
