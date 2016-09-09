@@ -24,8 +24,12 @@ nav > ul {              /*find the selector that selects all unordered lists in 
 
 }
 
+#player-nav {
+  margin: 5%, 0;
+}
+
 #player {
-  width: 80%;
+  width: 400pxpx;
   margin: 20px auto;
   padding: 10px, 5px, 5px, 5px;
   background: #75A575;
