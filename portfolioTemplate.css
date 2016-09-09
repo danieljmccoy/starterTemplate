@@ -1,9 +1,18 @@
 body {
   margin: 0 auto;
   background-color: #FEFEFE;
+  text-align: center;
+}
+
+section, nav, article, aside, header, hgroup, figure, figcaption {
+  display: block;
 }
 
 nav {
+
+}
+
+footer {
 
 }
 
@@ -15,12 +24,49 @@ nav > ul {              /*find the selector that selects all unordered lists in 
 
 }
 
-#nav-main {
-
+#player {
+  width: 80%;
+  margin: 20px auto;
+  padding: 10px, 5px, 5px, 5px;
+  background: #75A575;
+  border: 1px solid #666666;
+  border-radius: 10px;
 }
 
-#section-main {
+#play, #mute {
+  padding: 2px, 10px;
+  width: 65px;
+  border: 1px solid #333333;
+  background: #A1B15A;
+  font-weight: bold;
+  border-radius: 15%;
+}
 
+#buttons {
+  float: left;
+  width: 135px;
+  height: 20px;
+  padding-left: 5px;
+}
+
+#bar {
+  float: left;
+  width: 400px;
+  height: 16px;
+  pading: 2px;
+  margin: 2px 5px;
+  border: 1px solid #446644;
+  background: #CECECE;
+}
+
+#progress {
+  width: 0px;
+  height: 16px;
+  background: rgba(0,0,150,.3);
+}
+
+.clear {
+  clear: both;
 }
 
 .box1 {
@@ -34,6 +80,6 @@ nav > ul {              /*find the selector that selects all unordered lists in 
 }
 
 .box3 {
-  width: 100%;
+  width: 400px;
   background-color: #C8769A;
 }
