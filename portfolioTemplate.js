@@ -33,5 +33,24 @@
       loop = setInterval(status, 1000);
     }
   }
-  
+
+  function status() {
+    if(!mmedia.ended) {
+      var size = parseInt(mmedia.currentTime * maxProg / mmedia.duration);
+      progress.style.width = size + "px";
+    } else {
+      progress.style.width = "0px";
+      play.innerHTML = "Play"
+      clearInterval(loop);
+    }
+  }
+
+  function move(e) {
+    if(!mmedia.paused && !mmedia.ended) {
+      var mouse = e.pageX - bar.offsetLeft;
+      var newTime = mouseX * mmedia.duration / maxim;
+      mmedia.currentTime = newTime;
+      progress.style.width = mouseX + "px";
+    }
+  }
 })
