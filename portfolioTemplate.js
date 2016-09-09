@@ -1,6 +1,6 @@
 // create modules or iife or something similar upon organizing files, not sure exact structure yet
 
-(function() {
+
   // video player logic
   var maxProg, mmedia, play, bar, progress, mute, voulume, loop;
 
@@ -53,4 +53,19 @@
       progress.style.width = mouseX + "px";
     }
   }
-})
+
+  function sound() {
+    if(mute.value == "Mute") {
+      mmedia.muted = true;
+      mute.value = "Sound";
+    } else {
+      mmedia.muted = false;
+      mute.value = "Mute";
+    }
+  }
+
+  function level() {
+    mmedia.volume = volume.value;
+  }
+
+  addEventListener("load", init);
